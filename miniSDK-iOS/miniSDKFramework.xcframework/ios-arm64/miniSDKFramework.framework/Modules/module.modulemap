@@ -1,0 +1,6 @@
+framework module miniSDKFramework {
+  umbrella header "miniSDKFramework.h"
+  export *
+
+  module * { export * }
+}

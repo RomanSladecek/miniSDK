@@ -1,0 +1,49 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios18.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name miniSDKFramework
+import Combine
+import Foundation
+import Swift
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import miniSDKFramework
+extension SwiftUICore.Color {
+  public init(hex: Swift.String)
+}
+public struct FormConfiguration : Swift.Decodable {
+  public let fields: [miniSDKFramework.FormField]
+  public let submitButtonText: Swift.String
+  public let fontSize: Swift.Double?
+  public let fontColor: Swift.String?
+  public let backgroundColor: Swift.String?
+  public let backgroundImage: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FormField : Swift.Identifiable, Swift.Decodable {
+  public let id: Foundation.UUID
+  public let label: Swift.String
+  public let placeholder: Swift.String
+  public let isRequired: Swift.Bool
+  public let keyboardType: Swift.String?
+  public typealias ID = Foundation.UUID
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor public class FormScreenViewModel : Foundation.ObservableObject {
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FormService {
+  public static func fetchFormConfiguration(apiEndpoint: Swift.String) async throws -> miniSDKFramework.FormConfiguration
+  public static func submitFormData(apiEndpoint: Swift.String, formData: [Foundation.UUID : Swift.String]) async throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class MiniSDK {
+  public static let shared: miniSDKFramework.MiniSDK
+  public func initialize(apiEndpoint: Swift.String)
+  public func getFormView() -> some SwiftUICore.View
+  
+  @objc deinit
+}
+extension miniSDKFramework.FormScreenViewModel : Swift.Sendable {}

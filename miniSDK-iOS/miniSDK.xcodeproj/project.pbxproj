@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FFAB2B412D46E3AF00C25F78 /* miniSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAB2B372D46E3AE00C25F78 /* miniSDKFramework.framework */; };
+		FFAB2B4C2D46E3AF00C25F78 /* miniSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAB2B372D46E3AE00C25F78 /* miniSDKFramework.framework */; };
+		FFAB2B4D2D46E3AF00C25F78 /* miniSDKFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFAB2B372D46E3AE00C25F78 /* miniSDKFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FF503C382D43AFB6007D15C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,60 @@
 			remoteGlobalIDString = FF503C262D43AFB5007D15C6;
 			remoteInfo = miniSDK;
 		};
+		FFAB2B422D46E3AF00C25F78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF503C1F2D43AFB5007D15C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFAB2B362D46E3AE00C25F78;
+			remoteInfo = miniSDKFramework;
+		};
+		FFAB2B442D46E3AF00C25F78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF503C1F2D43AFB5007D15C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF503C262D43AFB5007D15C6;
+			remoteInfo = miniSDK;
+		};
+		FFAB2B4A2D46E3AF00C25F78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF503C1F2D43AFB5007D15C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFAB2B362D46E3AE00C25F78;
+			remoteInfo = miniSDKFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFAB2B4E2D46E3AF00C25F78 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FFAB2B4D2D46E3AF00C25F78 /* miniSDKFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FF503C272D43AFB5007D15C6 /* miniSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF503C372D43AFB6007D15C6 /* miniSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = miniSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF503C412D43AFB6007D15C6 /* miniSDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = miniSDKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFAB2B372D46E3AE00C25F78 /* miniSDKFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = miniSDKFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFAB2B402D46E3AF00C25F78 /* miniSDKFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = miniSDKFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FFAB2B532D46E3AF00C25F78 /* Exceptions for "miniSDKFramework" folder in "miniSDKFramework" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				miniSDKFramework.h,
+			);
+			target = FFAB2B362D46E3AE00C25F78 /* miniSDKFramework */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FF503C292D43AFB5007D15C6 /* miniSDK */ = {
@@ -45,6 +98,19 @@
 			path = miniSDKUITests;
 			sourceTree = "<group>";
 		};
+		FFAB2B382D46E3AE00C25F78 /* miniSDKFramework */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FFAB2B532D46E3AF00C25F78 /* Exceptions for "miniSDKFramework" folder in "miniSDKFramework" target */,
+			);
+			path = miniSDKFramework;
+			sourceTree = "<group>";
+		};
+		FFAB2B462D46E3AF00C25F78 /* miniSDKFrameworkTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = miniSDKFrameworkTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAB2B4C2D46E3AF00C25F78 /* miniSDKFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +136,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFAB2B342D46E3AE00C25F78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFAB2B3D2D46E3AF00C25F78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFAB2B412D46E3AF00C25F78 /* miniSDKFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +160,8 @@
 				FF503C292D43AFB5007D15C6 /* miniSDK */,
 				FF503C3A2D43AFB6007D15C6 /* miniSDKTests */,
 				FF503C442D43AFB6007D15C6 /* miniSDKUITests */,
+				FFAB2B382D46E3AE00C25F78 /* miniSDKFramework */,
+				FFAB2B462D46E3AF00C25F78 /* miniSDKFrameworkTests */,
 				FF503C282D43AFB5007D15C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,11 +172,23 @@
 				FF503C272D43AFB5007D15C6 /* miniSDK.app */,
 				FF503C372D43AFB6007D15C6 /* miniSDKTests.xctest */,
 				FF503C412D43AFB6007D15C6 /* miniSDKUITests.xctest */,
+				FFAB2B372D46E3AE00C25F78 /* miniSDKFramework.framework */,
+				FFAB2B402D46E3AF00C25F78 /* miniSDKFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FFAB2B322D46E3AE00C25F78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		FF503C262D43AFB5007D15C6 /* miniSDK */ = {
@@ -102,10 +198,12 @@
 				FF503C232D43AFB5007D15C6 /* Sources */,
 				FF503C242D43AFB5007D15C6 /* Frameworks */,
 				FF503C252D43AFB5007D15C6 /* Resources */,
+				FFAB2B4E2D46E3AF00C25F78 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FFAB2B4B2D46E3AF00C25F78 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				FF503C292D43AFB5007D15C6 /* miniSDK */,
@@ -163,6 +261,53 @@
 			productReference = FF503C412D43AFB6007D15C6 /* miniSDKUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FFAB2B362D46E3AE00C25F78 /* miniSDKFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFAB2B542D46E3AF00C25F78 /* Build configuration list for PBXNativeTarget "miniSDKFramework" */;
+			buildPhases = (
+				FFAB2B322D46E3AE00C25F78 /* Headers */,
+				FFAB2B332D46E3AE00C25F78 /* Sources */,
+				FFAB2B342D46E3AE00C25F78 /* Frameworks */,
+				FFAB2B352D46E3AE00C25F78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FFAB2B382D46E3AE00C25F78 /* miniSDKFramework */,
+			);
+			name = miniSDKFramework;
+			packageProductDependencies = (
+			);
+			productName = miniSDKFramework;
+			productReference = FFAB2B372D46E3AE00C25F78 /* miniSDKFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FFAB2B3F2D46E3AF00C25F78 /* miniSDKFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFAB2B552D46E3AF00C25F78 /* Build configuration list for PBXNativeTarget "miniSDKFrameworkTests" */;
+			buildPhases = (
+				FFAB2B3C2D46E3AF00C25F78 /* Sources */,
+				FFAB2B3D2D46E3AF00C25F78 /* Frameworks */,
+				FFAB2B3E2D46E3AF00C25F78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFAB2B432D46E3AF00C25F78 /* PBXTargetDependency */,
+				FFAB2B452D46E3AF00C25F78 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FFAB2B462D46E3AF00C25F78 /* miniSDKFrameworkTests */,
+			);
+			name = miniSDKFrameworkTests;
+			packageProductDependencies = (
+			);
+			productName = miniSDKFrameworkTests;
+			productReference = FFAB2B402D46E3AF00C25F78 /* miniSDKFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +326,13 @@
 						TestTargetID = FF503C262D43AFB5007D15C6;
 					};
 					FF503C402D43AFB6007D15C6 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = FF503C262D43AFB5007D15C6;
+					};
+					FFAB2B362D46E3AE00C25F78 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					FFAB2B3F2D46E3AF00C25F78 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = FF503C262D43AFB5007D15C6;
 					};
@@ -203,6 +355,8 @@
 				FF503C262D43AFB5007D15C6 /* miniSDK */,
 				FF503C362D43AFB6007D15C6 /* miniSDKTests */,
 				FF503C402D43AFB6007D15C6 /* miniSDKUITests */,
+				FFAB2B362D46E3AE00C25F78 /* miniSDKFramework */,
+				FFAB2B3F2D46E3AF00C25F78 /* miniSDKFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +377,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FF503C3F2D43AFB6007D15C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFAB2B352D46E3AE00C25F78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFAB2B3E2D46E3AF00C25F78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +421,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFAB2B332D46E3AE00C25F78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFAB2B3C2D46E3AF00C25F78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +447,21 @@
 			isa = PBXTargetDependency;
 			target = FF503C262D43AFB5007D15C6 /* miniSDK */;
 			targetProxy = FF503C422D43AFB6007D15C6 /* PBXContainerItemProxy */;
+		};
+		FFAB2B432D46E3AF00C25F78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFAB2B362D46E3AE00C25F78 /* miniSDKFramework */;
+			targetProxy = FFAB2B422D46E3AF00C25F78 /* PBXContainerItemProxy */;
+		};
+		FFAB2B452D46E3AF00C25F78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF503C262D43AFB5007D15C6 /* miniSDK */;
+			targetProxy = FFAB2B442D46E3AF00C25F78 /* PBXContainerItemProxy */;
+		};
+		FFAB2B4B2D46E3AF00C25F78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFAB2B362D46E3AE00C25F78 /* miniSDKFramework */;
+			targetProxy = FFAB2B4A2D46E3AF00C25F78 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -512,6 +709,106 @@
 			};
 			name = Release;
 		};
+		FFAB2B4F2D46E3AF00C25F78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = sk.smartly.miniSDKFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FFAB2B502D46E3AF00C25F78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = sk.smartly.miniSDKFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FFAB2B512D46E3AF00C25F78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sk.smartly.miniSDKFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/miniSDK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/miniSDK";
+			};
+			name = Debug;
+		};
+		FFAB2B522D46E3AF00C25F78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sk.smartly.miniSDKFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/miniSDK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/miniSDK";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,6 +844,24 @@
 			buildConfigurations = (
 				FF503C522D43AFB6007D15C6 /* Debug */,
 				FF503C532D43AFB6007D15C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFAB2B542D46E3AF00C25F78 /* Build configuration list for PBXNativeTarget "miniSDKFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFAB2B4F2D46E3AF00C25F78 /* Debug */,
+				FFAB2B502D46E3AF00C25F78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFAB2B552D46E3AF00C25F78 /* Build configuration list for PBXNativeTarget "miniSDKFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFAB2B512D46E3AF00C25F78 /* Debug */,
+				FFAB2B522D46E3AF00C25F78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

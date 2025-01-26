@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import miniSDKFramework
 
 @main
 struct ClientApp: App {
