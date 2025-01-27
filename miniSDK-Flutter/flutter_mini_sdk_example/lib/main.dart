@@ -1,7 +1,6 @@
 import 'dart:io' show Platform;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_mini_sdk/flutter_mini_sdk.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +30,6 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // A button to show the SwiftUI view on a new screen
             ElevatedButton(
               child: const Text('Show Form'),
               onPressed: () {
@@ -59,12 +57,10 @@ class FormViewScreen extends StatelessWidget {
         child: SizedBox(
           width: 500,
           height: 800,
-          // The UiKitView that displays your iOS SwiftUI form
           child: Platform.isIOS
               ? UiKitView(
             viewType: 'mini_sdk_view',
             creationParams: <String, dynamic>{
-              // The endpoint, if you want to pass it again
               'apiEndpoint': 'https://api.example.com/form',
             },
             creationParamsCodec: const StandardMessageCodec(),
