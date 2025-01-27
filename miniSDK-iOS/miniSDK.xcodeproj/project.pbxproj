@@ -88,27 +88,12 @@
 			path = miniSDK;
 			sourceTree = "<group>";
 		};
-		FF503C3A2D43AFB6007D15C6 /* miniSDKTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = miniSDKTests;
-			sourceTree = "<group>";
-		};
-		FF503C442D43AFB6007D15C6 /* miniSDKUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = miniSDKUITests;
-			sourceTree = "<group>";
-		};
 		FFAB2B382D46E3AE00C25F78 /* miniSDKFramework */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				FFAB2B532D46E3AF00C25F78 /* Exceptions for "miniSDKFramework" folder in "miniSDKFramework" target */,
 			);
 			path = miniSDKFramework;
-			sourceTree = "<group>";
-		};
-		FFAB2B462D46E3AF00C25F78 /* miniSDKFrameworkTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = miniSDKFrameworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -158,10 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				FF503C292D43AFB5007D15C6 /* miniSDK */,
-				FF503C3A2D43AFB6007D15C6 /* miniSDKTests */,
-				FF503C442D43AFB6007D15C6 /* miniSDKUITests */,
 				FFAB2B382D46E3AE00C25F78 /* miniSDKFramework */,
-				FFAB2B462D46E3AF00C25F78 /* miniSDKFrameworkTests */,
 				FF503C282D43AFB5007D15C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -228,9 +210,6 @@
 			dependencies = (
 				FF503C392D43AFB6007D15C6 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				FF503C3A2D43AFB6007D15C6 /* miniSDKTests */,
-			);
 			name = miniSDKTests;
 			packageProductDependencies = (
 			);
@@ -250,9 +229,6 @@
 			);
 			dependencies = (
 				FF503C432D43AFB6007D15C6 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				FF503C442D43AFB6007D15C6 /* miniSDKUITests */,
 			);
 			name = miniSDKUITests;
 			packageProductDependencies = (
@@ -297,9 +273,6 @@
 			dependencies = (
 				FFAB2B432D46E3AF00C25F78 /* PBXTargetDependency */,
 				FFAB2B452D46E3AF00C25F78 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				FFAB2B462D46E3AF00C25F78 /* miniSDKFrameworkTests */,
 			);
 			name = miniSDKFrameworkTests;
 			packageProductDependencies = (

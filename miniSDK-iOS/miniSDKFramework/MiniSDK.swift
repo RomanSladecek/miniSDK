@@ -13,12 +13,12 @@ public class MiniSDK {
 
     private init() {}
 
-    /// Initialize the SDK with the API endpoint
+    // Initialize the SDK with the API endpoint
     public func initialize(apiEndpoint: String) {
         self.apiEndpoint = apiEndpoint
     }
 
-    /// Get the form view
+    // Get the form view
     public func getFormView() -> some View {
         guard let apiEndpoint = apiEndpoint else {
             return AnyView(Text("SDK not initialized. Call `initialize()` first."))
