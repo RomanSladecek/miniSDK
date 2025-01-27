@@ -14,7 +14,7 @@ To explore and utilize the miniSDK, navigate to the respective directories (`min
 ## Documentation
 
 See PDF:
-[miniSDK Documentation.pdf](https://github.com/user-attachments/files/18559443/miniSDK.Documentation.pdf)
+[miniSDK Documentation.pdf](https://github.com/user-attachments/files/18559649/miniSDK.Documentation.pdf)
 
 
 ## License
