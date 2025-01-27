@@ -18,3 +18,7 @@
 ### Installation
 
 See attached documentation PDF
+
+## Screenshots
+
+![Simulator Screenshot - iPhone 16 Pro Max - 2025-01-27 at 15 05 00](https://github.com/user-attachments/assets/4cf9d66f-81f9-4a71-b319-bd0f1dac6038)
