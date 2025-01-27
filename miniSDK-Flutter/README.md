@@ -13,7 +13,7 @@
 
 - **Flutter**: 2.0+
 - **Dart**: 2.12+
-- **iOS**: 12.0+
+- **iOS**: 13.0+
 
 ### Installation
 
