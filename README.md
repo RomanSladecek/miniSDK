@@ -2,6 +2,8 @@
 
 This repository contains an interview task for Bloomreach, focusing on the development of a mini Software Development Kit (SDK) with both iOS and Flutter (Wrapper) implementations.
 
+Assignment: [mSDK Software Engineer - assignment.pdf](https://github.com/user-attachments/files/18561721/mSDK.Software.Engineer.-.assignment.pdf)
+
 ## Repository Structure
 
 - **miniSDK-iOS/**: Contains the native iOS implementation of the miniSDK + iOS example app.
